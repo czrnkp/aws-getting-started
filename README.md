@@ -1,12 +1,12 @@
-# aws-getting-started
+# AWS-getting-started
 AWS Marketplace offer - getting started with BlockApps STRATO on AWS
 
-# BlockApps STRATO instance on AWS marketplace
+## BlockApps STRATO instance on AWS marketplace
 - On the AWS marketplace search for the keyword "blockapps" or "blockchain" and you'll find our listed offer (with a 5-day free trial edition).
 
 *This individual STRATO instance (private blockchain node, self-contained and sufficient for prototyping and light POC's) provides a RESTful web API on the HTTP port for querying the blockchain and compiling and uploading contracts.*
 
-## Steps to run STRATO Developer Edition using the AWS marketplace AMI
+### Steps to run STRATO Developer Edition using the AWS marketplace AMI
 
 *All the setup is already done for you in the packaged AMI, just run the startup script to launch the platform services.*
 
@@ -18,7 +18,7 @@ AWS Marketplace offer - getting started with BlockApps STRATO on AWS
 $ ./strato-admin.sh --start
 ```
 
-## Note: if the instance services do not come up within a minute, you can restart the services using:
+### Note: if the instance services do not come up within a minute, you can restart the services using:
 ```bash
 ./strato-admin.sh --stop 
 
