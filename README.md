@@ -18,7 +18,7 @@ AWS Marketplace offer - getting started with BlockApps STRATO on AWS
 $ ./strato-admin.sh --start
 ```
 
-### Note: if the instance services do not come up within a minute, you can restart the services using:
+*Note: if the instance services do not come up within a minute, you can restart the services using*
 ```bash
 ./strato-admin.sh --stop 
 
