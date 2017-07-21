@@ -28,6 +28,7 @@ $ ./strato-admin.sh --start
 ```
 
 *The single instance will provide the following (all on port 80):
+
 username: *admin* 
 
 password: *ec2-instanceID*
