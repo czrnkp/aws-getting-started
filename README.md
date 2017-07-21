@@ -27,12 +27,21 @@ $ ./strato-admin.sh --start
 ./strato-admin.sh --start
 ```
 
-*The single instance will provide the following (all on port 80):username: admin password: <ec2-instanceID>*
+*The single instance will provide the following (all on port 80):
+username: *admin* 
+
+password: *ec2-instanceID*
+
 - The strato api -> http://[your server ip]/strato-api
+
 - A bloc instance -> http://[your server ip]/bloc/v2.1
+
 - A bloc explorer -> http://[your server ip]
+
 - bloc API docs -> http://[your server ip]/bloc/v2.1/docs
+
 - STRATO API docs -> http://[your server ip]/strato-api/eth/v1.2/docs
+
 - Cirrus search -> http://[your server ip]/cirrus/search/
 
 Once you've the instance up and running with the API's, you can also explore our demo-app here: https://github.com/blockapps/blockapps-ba 
