@@ -8,24 +8,24 @@ usage='
    --stop                              Stop STRATO
 '
 
- function setEnv {
+function setEnv {
    echo "$1 = ${!1}"
    echo "Setting Env"
-    export stratoHost=nginx
-    export ssl=false
     export uiPassword=$(ec2metadata --instance-id)
     export DNS_NAME=$(ec2metadata --public-hostname)
     export NODE_NAME=${DNS_NAME:-localhost}
-    export BLOC_URL=http://${DNS_NAME:-localhost}/bloc/v2.1
-    export BLOC_DOC_URL=http://${DNS_NAME:-localhost}/docs/?url=/bloc/v2.1/swagger.json
+    export BLOC_URL=http://${DNS_NAME:-localhost}/bloc/v2.2
+    export BLOC_DOC_URL=http://${DNS_NAME:-localhost}/docs/?url=/bloc/v2.2/swagger.json
     export STRATO_URL=http://${DNS_NAME:-localhost}/strato-api/eth/v1.2
     export STRATO_DOC_URL=http://${DNS_NAME:-localhost}/docs/?url=/strato-api/eth/v1.2/swagger.json
     export CIRRUS_URL=http://${DNS_NAME:-localhost}/cirrus/search
     export cirrusurl=nginx/cirrus
-    export stratoHost=nginx
-    export ssl=false
     export STRATO_GS_MODE=3 # for AWS
- }
+    export APEX_URL=${APEX_URL:-http://$DNS_NAME/apex-api}
+    #export authBasic={authBasic:-true}
+    export authBasic=true
+    export SINGLE_NODE=true
+}
 
 function runStrato {
     setEnv
